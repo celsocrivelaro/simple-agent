@@ -16,7 +16,7 @@ empacotamento.
 | `publicar` | depois dos dois, e só em *push* na `main`: constrói a imagem e publica no Docker Hub |
 
 Secrets usados (Settings > Secrets and variables > Actions):
-`DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN` e, para o *eval*, `GROQ_API_KEY`.
+`DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN` e, para o *eval*, `GROQ_API_KEY`. O modelo do *eval* vem da variável `GROQ_MODELO` (aba Variables); sem ela, vale `openai/gpt-oss-20b`.
 
 ## Rodar
 
