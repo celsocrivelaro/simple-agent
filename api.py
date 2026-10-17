@@ -24,4 +24,4 @@ def perguntar(pedido: Pergunta) -> dict:
 @app.get("/saude")
 def saude() -> dict:
     """Responde sem chamar o modelo: diz que o processo está de pé, e com qual modelo."""
-    return {"ok": True, "modelo": f"{PROVEDOR}/{MODELO}"}
+    return {"resultado": True, "modelo": f"{PROVEDOR}/{MODELO}"}
