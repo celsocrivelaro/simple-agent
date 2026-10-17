@@ -9,7 +9,7 @@ cliente = TestClient(api.app)
 def test_saude_nao_chama_o_modelo():
     resposta = cliente.get("/saude")
     assert resposta.status_code == 200
-    assert resposta.json()["ok"] is True
+    assert resposta.json()["resultado"] is True
 
 
 def test_pergunta_devolve_a_resposta_do_agente(monkeypatch):
